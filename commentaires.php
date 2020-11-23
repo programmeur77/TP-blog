@@ -34,6 +34,38 @@ include('connexionBdd.php');
 
 	<h2>Commentaires</h2>
 
+	<div align="center">
+
+		<form method="POST" action="commentaires_post.php">
+			
+			<table>
+				<tr>
+					<td></td>
+					<td>
+						<input type="text" name="pseudo" placeholder="Votre pseudo" id="pseudo" required />
+					</td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td>
+						<textarea name="commentaire" placeholder="Commenter" required></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="submit" value="Envoyer">
+					</td>
+				</tr>
+			</table>
+
+		</form>
+	</div>
+
+	<br /><br />
+
 	<?php
 	if (isset($_GET['id']) AND !empty($_GET['id'])) 
 	{
