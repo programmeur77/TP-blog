@@ -24,6 +24,11 @@ include('connexionBdd.php');
 	$reqBillet->execute(array($_GET['id']));
 
 	$donnees = $reqBillet->fetch();
+
+	if (empty($donnees['contenu'])) 
+	{
+		echo 'Ce billet n\'existe pas';
+	}
 	?>
 	<h3><?php echo htmlspecialchars($donnees['titre']); ?> <em> <?php echo htmlspecialchars($donnees['date']); ?></em></h3>
 	<span class="news">
