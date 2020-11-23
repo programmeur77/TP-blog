@@ -25,16 +25,19 @@ $reqBillet = $bdd->query("SELECT id, titre, contenu, DATE_FORMAT(date_creation, 
 while ($donnees = $reqBillet->fetch()) 
 {
 ?>
-
-	<h3><?php echo htmlspecialchars($donnees['titre']); ?> <em> <?php echo $donnees['date']; ?></em></h3>
 	<span class="news">
+		<h3>
+			<?php echo htmlspecialchars($donnees['titre']); ?> 
+			<em> <?php echo $donnees['date']; ?></em>
+		</h3>
 		<p>
-			<?php echo htmlspecialchars($donnees['contenu']); ?><br />
-			<?php echo '<em><a href="commentaires.php?id=' . $donnees['id'] . '">Commentaires</a></em>' ?>
+			<?php echo nl2br(htmlspecialchars($donnees['contenu'])); ?><br />
+			<em><a href="commentaires.php?id=<?php echo $donnees['id']; ?>">Commentaires</a>
 		</p>
-	</span>
+	</div>
 <?php
 }
+$reqBillet->closeCursor();
 ?>
 </body>
 
