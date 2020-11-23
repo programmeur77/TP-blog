@@ -52,6 +52,8 @@ include('connexionBdd.php');
 	<?php
 		}
 	}
+	$reqBillet->closeCursor();
+	$reqCommentaires->closeCursor();
 	?>
 
 </body>
