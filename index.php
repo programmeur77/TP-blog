@@ -1,7 +1,7 @@
 <?php
-
 include('connexionBdd.php');
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,10 +26,10 @@ while ($donnees = $reqBillet->fetch())
 {
 ?>
 
-	<h3><?php echo $donnees['titre']; ?> <em> <?php echo $donnees['date']; ?></em></h3>
+	<h3><?php echo htmlspecialchars($donnees['titre']); ?> <em> <?php echo $donnees['date']; ?></em></h3>
 	<span class="news">
 		<p>
-			<?php echo $donnees['contenu']; ?><br />
+			<?php echo htmlspecialchars($donnees['contenu']); ?><br />
 			<?php echo '<em><a href="commentaires.php?id=' . $donnees['id'] . '">Commentaires</a></em>' ?>
 		</p>
 	</span>
