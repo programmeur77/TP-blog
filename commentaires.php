@@ -28,7 +28,7 @@ include('connexionBdd.php');
 	<h3><?php echo htmlspecialchars($donnees['titre']); ?> <em> <?php echo htmlspecialchars($donnees['date']); ?></em></h3>
 	<span class="news">
 		<p>
-			<?php echo htmlspecialchars($donnees['contenu']); ?>
+			<?php echo nl2br(htmlspecialchars($donnees['contenu'])); ?>
 		</p>
 	</span>
 
