@@ -6,4 +6,8 @@ Ajout d'un formulaire pour pouvoir poster des commentaires.
 
 Ajout d'une vérification sur commentaires.php permettant d'afficher une erreur si jamais l'utilisateur modifie l'URL.
 
+Ajout d'un WHERE dans la requête SQL permettant d'afficher les billets de blog, afin de n'afficher que ceux qui on été validés par l'administrateur.
+
+Création de l'espace d'administration du blog, avec admin.php permettant de voir tout ce qu'il y a valider. J'ai également ajouté des pages permettant de valider ou supprimer du contenu.
+
 
