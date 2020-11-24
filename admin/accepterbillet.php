@@ -1,7 +1,5 @@
 <?php
-<<<<<<< HEAD
 include('connexionBdd.php');
-=======
 /*
 accepterbillet.php
 ------------------
@@ -12,7 +10,6 @@ Last update : 24/11/2020
 */
 
 include('connexionBdd.php'); 
->>>>>>> index
 ?>
 
 <!DOCTYPE html>
