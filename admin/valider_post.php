@@ -1,4 +1,6 @@
 <?php
+
+
 session_start();
 
 include('connexionBdd.php');
@@ -12,19 +14,19 @@ if (isset($_POST['valider']))
 
 		if ($reqAjouter) 
 		{
-			$_SESSION['publie'] = "Votre billet a bien été publié";
+			$_SESSION['message'] = "Votre billet a bien été publié";
 			header('Location: ajouter.php');
 		}
 		else
 		{
-			$_SESSION['publie'] = "Erreur lors du stockage dans la base de données";
+			$_SESSION['message'] = "Erreur lors du stockage dans la base de données";
 			header('Location: ajouter.php');
 		}
 	//}
 	//else
 	//{
-	//	$_SESSION['publie'] = "Tous les champs doivent être remplis";
-	//	header('Location: ajouter.php');
+		//$_SESSION['publie'] = "Tous les champs doivent être remplis";
+		//header('Location: ajouter.php');
 	//}
 }
 ?>
