@@ -1,5 +1,18 @@
 <?php
+<<<<<<< HEAD
 include('connexionBdd.php');
+=======
+/*
+accepterbillet.php
+------------------
+
+Affiche le billet dans son intégralité et permet de choisir si on veut le publier ou le supprimer.
+
+Last update : 24/11/2020
+*/
+
+include('connexionBdd.php'); 
+>>>>>>> index
 ?>
 
 <!DOCTYPE html>
