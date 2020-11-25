@@ -10,4 +10,9 @@ Ajout d'un WHERE dans la requête SQL permettant d'afficher les billets de blog,
 
 Création de l'espace d'administration du blog, avec admin.php permettant de voir tout ce qu'il y a valider. J'ai également ajouté des pages permettant de valider ou supprimer du contenu.
 
+----------
+24/11/2020
 
+Création, pour l'espace d'admin, du formulaire pour créer un billet de blog.
+
+Création également du script pour supprimer, après l'évaluation d'un admin, d'un billet de blog. 
