@@ -22,7 +22,6 @@ while($donnees = $reqBillet->fetch())
 	<h3><?php echo $donnees['titre']; ?> - <?php echo $donnees['date']; ?></h3>
 
 	<a href="accepterbillet.php?id=<?php echo $donnees['id']; ?>">Lire en entier</a>
-
 <?php
 }
 ?>
