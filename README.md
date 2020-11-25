@@ -15,4 +15,15 @@ Création de l'espace d'administration du blog, avec admin.php permettant de voi
 
 Création, pour l'espace d'admin, du formulaire pour créer un billet de blog.
 
-Création également du script pour supprimer, après l'évaluation d'un admin, d'un billet de blog. 
+Création également du script pour supprimer, après l'évaluation d'un admin, un billet de blog.
+
+--------- MISES A JOUR A VENIR -------
+- Création d'un menu sur la page d'accueil admin afin d'accéder facilement à tous les outils dont il a besoin.
+
+- Possibilité pour l'admin de supprimer un commentaire signalé.
+
+- Côté utilisateur, possibilité de signaler un commentaire.
+
+- Création d'un système de likes.
+
+- (Pas sur) Possibilté pour l'utilisateur de consulter seulement les articles les plus populaires.
