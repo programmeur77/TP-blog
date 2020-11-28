@@ -24,23 +24,21 @@ include('connexionBdd.php');
 	$reqBillet->execute(array($_GET['id']));
 
 	$donnees = $reqBillet->fetch();
-<<<<<<< HEAD
+
 
 	if (empty($donnees['contenu'])) 
 	{
 		echo 'Ce billet n\'existe pas';
 	}
-=======
->>>>>>> index
 	?>
 	<h3><?php echo htmlspecialchars($donnees['titre']); ?> <em> <?php echo htmlspecialchars($donnees['date']); ?></em></h3>
 	<span class="news">
 		<p>
-<<<<<<< HEAD
+
 			<?php echo nl2br(htmlspecialchars($donnees['contenu'])); ?>
-=======
+
 			<?php echo htmlspecialchars($donnees['contenu']); ?>
->>>>>>> index
+
 		</p>
 	</span>
 
@@ -48,13 +46,12 @@ include('connexionBdd.php');
 
 	<div align="center">
 
-<<<<<<< HEAD
 		<form method="POST" action="commentaires_post.php">
 			
-=======
+
 		<form method="POST" action="commentaires_post.php?id=<?php echo $_GET['id'];?>">
 
->>>>>>> index
+
 			<table>
 				<tr>
 					<td></td>
@@ -69,10 +66,7 @@ include('connexionBdd.php');
 						<textarea name="commentaire" placeholder="Commenter" required></textarea>
 					</td>
 				</tr>
-<<<<<<< HEAD
 
-=======
->>>>>>> index
 				<tr>
 					<td></td>
 					<td>
@@ -104,11 +98,10 @@ include('connexionBdd.php');
 	<?php
 		}
 	}
-<<<<<<< HEAD
+
 	$reqBillet->closeCursor();
 	$reqCommentaires->closeCursor();
-=======
->>>>>>> index
+
 	?>
 
 </body>
