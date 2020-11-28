@@ -9,4 +9,3 @@ function getBillets()
 
 	return $reqBillet;
 }
-?>
